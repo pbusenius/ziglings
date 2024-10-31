@@ -34,6 +34,7 @@ const Role = enum {
 // it a u8 integer type.
 const Character = struct {
     role: Role,
+    health: u8,
     gold: u32,
     experience: u32,
 };
@@ -44,6 +45,7 @@ pub fn main() void {
         .role = Role.wizard,
         .gold = 20,
         .experience = 10,
+        .health = 100,
     };
 
     // Glorp gains some gold.
