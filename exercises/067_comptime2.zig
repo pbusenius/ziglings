@@ -35,6 +35,7 @@ pub fn main() void {
     // In this contrived example, we've decided to allocate some
     // arrays using a variable count! But something's missing...
     //
+
     comptime var count = 0;
 
     count += 1;
