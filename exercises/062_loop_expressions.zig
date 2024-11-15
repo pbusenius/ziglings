@@ -45,7 +45,9 @@ pub fn main() void {
 
     // Let's find the first language with a three-letter name and
     // return it from the for loop.
-    const current_lang: ?[]const u8 = for (langs) |lang| if (lang.len == 3) break lang else null;
+    const current_lang: ?[]const u8 = for (langs) |lang| {
+        if (lang.len == 3) break lang;
+    } else null;
 
     if (current_lang) |cl| {
         print("Current language: {s}\n", .{cl});
